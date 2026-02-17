@@ -26,10 +26,12 @@ public class Main {
                     break;
 
                 case 2:
-                    ProjectDAO.getAllProjects()
-                            .forEach(p -> System.out.println(
-                                    p.id + " " + p.title + " " + p.deadline + " " + p.revenue
-                            ));
+
+                            for(Project p :  ProjectDAO.getAllProjects()){
+                                    System.out.println(
+                                    p.id + " " + p.title + " " + p.deadline + " " + p.revenue)
+                            ;}
+
                     break;
 
                 case 3:
